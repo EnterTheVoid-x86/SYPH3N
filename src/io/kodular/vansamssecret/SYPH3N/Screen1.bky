@@ -1,0 +1,210 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="xcWwaJUl*HI[n`6E??dw" x="-1330" y="-450">
+    <mutation component_type="Button" is_generic="false" instance_name="Button3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button3</field>
+    <statement name="DO">
+      <block type="component_set_get" id="P6#3[04^BQLo/EXN@(gY">
+        <mutation component_type="Download" set_or_get="set" property_name="DownloadUrl" is_generic="false" instance_name="Download1"></mutation>
+        <field name="COMPONENT_SELECTOR">Download1</field>
+        <field name="PROP">DownloadUrl</field>
+        <value name="VALUE">
+          <block type="text" id="}h[t=)@/o8~g0oSuWkaZ">
+            <field name="TEXT">https://github.com/topjohnwu/Magisk/releases/download/v24.3/Magisk-v24.3.apk</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="xROxRNmU~iOl,Rh+:6y)">
+            <mutation component_type="Download" method_name="Download" is_generic="false" instance_name="Download1"></mutation>
+            <field name="COMPONENT_SELECTOR">Download1</field>
+            <next>
+              <block type="component_set_get" id="EZx8o%)%!cf`mI@EMqPK">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+                <field name="COMPONENT_SELECTOR">Label1</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text" id="9n+`)qExSZ+(tE?U}4]l">
+                    <field name="TEXT">APK Downloaded, check your downloads folder!</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="#2yrlUa6l/0;sM7I*VfZ" x="-1730" y="-350">
+    <mutation component_type="Button" is_generic="false" instance_name="Button4" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button4</field>
+    <statement name="DO">
+      <block type="component_set_get" id="Cu`;}WufG7W$ZV4re/}:">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+        <field name="COMPONENT_SELECTOR">Label1</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="component_method" id="jNz(grOZme@V^79NL7R5">
+            <mutation component_type="KIO4_Terminal" method_name="Run" is_generic="false" instance_name="KIO4_Terminal1"></mutation>
+            <field name="COMPONENT_SELECTOR">KIO4_Terminal1</field>
+            <value name="ARG0">
+              <block type="text" id="N~un1]tmaDs];|yI{csd">
+                <field name="TEXT">su -c stop &amp;&amp; start</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="9snykG@ix7Ls(m!O;|@(" x="-1030" y="-370">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="controls_if" id="^xyTq8W^gxZ+2n}%x4i3">
+        <value name="IF0">
+          <block type="logic_compare" id="cBot+%{Jlyg]bSX#5rI+">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="component_method" id="u2|s7uU^a6YTpT=4i1${">
+                <mutation component_type="MakeroidShell" method_name="IsRooted" is_generic="false" instance_name="Shell1"></mutation>
+                <field name="COMPONENT_SELECTOR">Shell1</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_boolean" id="gVe(Sy+R0G]h]-^sfEMC">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="CBK^J;Q#77Uicy}tbP)|">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+            <field name="COMPONENT_SELECTOR">Label1</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="F:B5Q4o*jYMLfH:3o%Bh">
+                <field name="TEXT">Rooted!</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="Ap^L?edt7]*g|VharqQj">
+                <mutation component_type="Label" set_or_get="set" property_name="TextColor" is_generic="false" instance_name="Label1"></mutation>
+                <field name="COMPONENT_SELECTOR">Label1</field>
+                <field name="PROP">TextColor</field>
+                <value name="VALUE">
+                  <block type="color_green" id="q`npv4MXb*y-OM!]z)Wn">
+                    <field name="COLOR">#4CAF50</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="RzlblJJ0tQi++P;yOydg">
+            <value name="IF0">
+              <block type="logic_compare" id="U,K=5vY39t%zWA^UyASh">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_method" id="D88l,:o]Pmwm`EF3]x}D">
+                    <mutation component_type="MakeroidShell" method_name="IsRooted" is_generic="false" instance_name="Shell1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Shell1</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_boolean" id="yq%6W4)7-~E2`tw+8*f8">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="component_set_get" id="pl!+M3rs*|#a!ahzl$w9">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+                <field name="COMPONENT_SELECTOR">Label1</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text" id="DMnSqg$UEn_MZ,G0{WNZ">
+                    <field name="TEXT">Unrooted!</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="H8YlolN)@ki(V,/hX%rL">
+                    <mutation component_type="Label" set_or_get="set" property_name="TextColor" is_generic="false" instance_name="Label1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Label1</field>
+                    <field name="PROP">TextColor</field>
+                    <value name="VALUE">
+                      <block type="color_green" id="tA+MMmdSbyGifG3TjARY">
+                        <field name="COLOR">#ff0000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="Z6]=78]1C,~T_e-gsja-" x="-1730" y="-230">
+    <mutation component_type="Button" is_generic="false" instance_name="Button5" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button5</field>
+    <statement name="DO">
+      <block type="component_set_get" id="0P3sWo;@0Ly1P+8?jAxu">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+        <field name="COMPONENT_SELECTOR">Label1</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="component_method" id=";QTL!QTl![l!3G`gvge^">
+            <mutation component_type="KIO4_Terminal" method_name="Run" is_generic="false" instance_name="KIO4_Terminal1"></mutation>
+            <field name="COMPONENT_SELECTOR">KIO4_Terminal1</field>
+            <value name="ARG0">
+              <block type="text" id="|:01O/h]mv9Gm{=P+`C/">
+                <field name="TEXT">su -c "cat /data/misc/wifi/wpa_supplicant.conf &gt; /storage/emulated/0/wifi-networks.txt"</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="g;O$NA,HyH[1(A)A(Z`M">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+            <field name="COMPONENT_SELECTOR">Label1</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text" id="e)Dn6We@h@jdm%$U!^Y?">
+                <field name="TEXT">Success! Check wifi-networks.txt in your internal storage.</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="rX,xt%yZkS8@]*Jsrv[T">
+                <mutation component_type="Label" set_or_get="set" property_name="TextColor" is_generic="false" instance_name="Label1"></mutation>
+                <field name="COMPONENT_SELECTOR">Label1</field>
+                <field name="PROP">TextColor</field>
+                <value name="VALUE">
+                  <block type="color_green" id="CErjEx)9)JYT,;(KzDXg">
+                    <field name="COLOR">#4CAF50</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="!;z6PqeS*KQTeV@TVz$1" x="-1010" y="-50">
+    <mutation component_type="Button" is_generic="false" instance_name="Button2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button2</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="3/g+yz+Eu1Kwmhw/kWgl">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="{1C(4cS|g`wa6PahV?pq">
+            <field name="SCREEN">Screen2</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="241" language-version="34"></yacodeblocks>
+</xml>

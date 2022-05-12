@@ -1,0 +1,25 @@
+[{
+ "categoryString": "EXTENSION",
+ "nonVisible": "true",
+ "iconName": "http://juanant91.byethost3.com/terminal.png",
+ "methods": [{
+  "deprecated": "false",
+  "name": "Run",
+  "description": "Run shell commands.",
+  "params": [{
+   "name": "commandLine",
+   "type": "text"
+  }],
+  "returnType": "text"
+ }],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "com.KIO4_Terminal.KIO4_Terminal",
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "KIO4_Terminal",
+ "helpString": "KIO4_Terminal for LINUX commands. Juan Antonio Villalpando - KIO4.COM ",
+ "properties": [],
+ "events": []
+}]

@@ -1,0 +1,130 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="|9x2XCegdIUfgR-UV?3#" x="-430" y="-390">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="g4f|QsP@0D@Tn)dN)W6l">
+        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1"></mutation>
+        <field name="COMPONENT_SELECTOR">Label1</field>
+        <field name="PROP">Text</field>
+        <value name="VALUE">
+          <block type="text_join" id="b4b}P8$LH:`v?BUhR6@G">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="text" id="_;ceS)yG7`dD)}k/Q;yB">
+                <field name="TEXT">ANDROID VERSION: </field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="component_set_get" id="8t%]Y*xV5Han/bI!:_7@">
+                <mutation component_type="DeviceTools" set_or_get="get" property_name="AndroidVersion" is_generic="false" instance_name="Device_Utilities1"></mutation>
+                <field name="COMPONENT_SELECTOR">Device_Utilities1</field>
+                <field name="PROP">AndroidVersion</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="[y,u(KThzUGah6SaS[~X">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1_copy"></mutation>
+            <field name="COMPONENT_SELECTOR">Label1_copy</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text_join" id="j6Mx)H1o!Wb.`[j^Y?$*">
+                <mutation items="2"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="yXX|pQ:Ixj,D.vF;aNls">
+                    <field name="TEXT">BOARD NAME: </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="component_set_get" id="`sH0sH00ln8`T]z__|Fa">
+                    <mutation component_type="DeviceTools" set_or_get="get" property_name="Board" is_generic="false" instance_name="Device_Utilities1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Device_Utilities1</field>
+                    <field name="PROP">Board</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="gw:v27NHxs@{/N=jwb?]">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1_copy1"></mutation>
+                <field name="COMPONENT_SELECTOR">Label1_copy1</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text_join" id="y@/s7u!*UlSQ.6G+jrCy">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="T1.O21`(aRq`=#tHwmW6">
+                        <field name="TEXT">MANUFACTURER: </field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="component_set_get" id="Z(sG|DtU]Aw*a:bvntLG">
+                        <mutation component_type="DeviceTools" set_or_get="get" property_name="Manufacturer" is_generic="false" instance_name="Device_Utilities1"></mutation>
+                        <field name="COMPONENT_SELECTOR">Device_Utilities1</field>
+                        <field name="PROP">Manufacturer</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="s+RjLE1LLqKQ~!W3?:QR">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1_copy2"></mutation>
+                    <field name="COMPONENT_SELECTOR">Label1_copy2</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="text_join" id="hUC#7~ijXCZJi+..l{hN">
+                        <mutation items="2"></mutation>
+                        <value name="ADD0">
+                          <block type="text" id="AT8:8,{8*e]46XH-~k{G">
+                            <field name="TEXT">TYPE: </field>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="component_set_get" id="i6Xei1F(0UpQao}Dyx/q">
+                            <mutation component_type="DeviceTools" set_or_get="get" property_name="Type" is_generic="false" instance_name="Device_Utilities1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Device_Utilities1</field>
+                            <field name="PROP">Type</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="Jx/*P)T1~(WKhphJTo}D">
+                        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label1_copy2"></mutation>
+                        <field name="COMPONENT_SELECTOR">Label1_copy2</field>
+                        <field name="PROP">Text</field>
+                        <value name="VALUE">
+                          <block type="component_set_get" id=".L}-VzY8zA(8B!4{+4}z">
+                            <mutation component_type="DeviceTools" set_or_get="get" property_name="ModelName" is_generic="false" instance_name="Device_Utilities1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Device_Utilities1</field>
+                            <field name="PROP">ModelName</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="ea!h*#Jzu8|82jZt`#hY" x="-410" y="-90">
+    <mutation component_type="Button" is_generic="false" instance_name="Button1_copy" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1_copy</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="a-5qSbfkMh1lx2MT7HQz">
+        <value name="SCREEN">
+          <block type="helpers_screen_names" id="A^KD[Fm=DzM?G2;69GKU">
+            <field name="SCREEN">Screen1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="241" language-version="34"></yacodeblocks>
+</xml>
